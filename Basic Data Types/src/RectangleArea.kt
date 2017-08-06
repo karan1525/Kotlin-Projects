@@ -35,7 +35,7 @@ fun main(strings: Array<String>) {
     val startStr:String = "Red"
 
     val starts1:Boolean = str1.startsWith(startStr);
-    val starts2:Boolean = str1.startsWith(startStr);
+    val starts2:Boolean = str2.startsWith(startStr);
 
     println("$str1 starts with $startStr ? $starts1") //returns true or false depending
     println("$str2 starts with $startStr ? $starts2") //prints boolean
