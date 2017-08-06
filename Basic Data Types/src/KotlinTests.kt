@@ -47,12 +47,38 @@ fun main(strings: Array<String>) {
     println(getStringLength(string1))
     println(getStringLength(intExample))
 
+    for (i in strings.indices) { //iterating over an arrayList
+        println(strings[i])
+    }
+
 }
 
 fun getStringLength(obj: Any):Int? {
     if (obj is String) {
         return obj.length
     }
-
     return null
+}
+//Need to do a null check if using ?
+fun strLenSafe(a: String?): Int = a?.length ?: 0 //elvis operator (minimize the code below)
+//    if (a != null) {
+//        a.length
+//    } else {
+//        0
+//    }
+
+//Make null checks while calling a method using the ? operator
+fun printAllCaps(s: String?) {
+    val allCaps: String? = s?.toUpperCase()
+    println(allCaps)
+}
+
+//Using the as operator for smart casting
+class Person(val firstName:String, val lastName: String) {
+    override fun equals(o: Any?): Boolean {
+        val otherPerson= o as? Person ?: return false
+        return (otherPerson.firstName == firstName && otherPerson.lastName == lastName)
+    }
+
+    override fun hashCode(): Int = firstName.hashCode() * 37 + lastName.hashCode()
 }
