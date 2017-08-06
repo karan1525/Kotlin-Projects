@@ -30,7 +30,7 @@ fun main(strings: Array<String>) {
     //Starts with code
 
     val str1:String = "Red is my favorite color"
-    var str2:String = "Orange is also my favorite color"
+    val str2:String = "Orange is also my favorite color"
 
     val startStr:String = "Red"
 
