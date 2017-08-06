@@ -41,5 +41,5 @@ fun test(args: Array<String>) {
     cases(0L)
     cases(nullClass())
     cases("hello")
-    
+
 }
