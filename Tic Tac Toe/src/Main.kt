@@ -5,16 +5,15 @@ import java.util.*
  */
 
 class TicTacToe {
-    private val board: Array<CharArray>
+    private val board: Array<CharArray> = Array(3, {CharArray(3) })
     var currentPlayerMark: Char = ' '
 
     init {
-        board = Array<CharArray> (3, {CharArray(3) })
         currentPlayerMark = 'x'
-        initalizeBoard()
+        initializeBoard()
     }
 
-    fun initalizeBoard()  {
+    private fun initializeBoard()  {
         for (i in 0..2) {
             for (j in 0..2) {
                 board[i][j] = '-'
@@ -38,11 +37,10 @@ class TicTacToe {
     fun isBoardFull():Boolean {
         var isFull = true
         for (i in 0..2) {
-            for (j in 0..2) {
-                if (board[i][j] == '-') {
-                    isFull = false
-                }
-            }
+            (0..2)
+                    .asSequence()
+                    .filter { board[i][it] == '-' }
+                    .forEach { isFull = false }
         }
 
         return isFull
@@ -53,28 +51,17 @@ class TicTacToe {
     }
 
     private fun checkRowsForWin():Boolean {
-        for (i in 0..2) {
-            if (checkRowCol (board[i][0], board[i][1], board[i][2])) {
-                return true
-            }
-        }
 
-        return false
+        return (0..2).any { checkRowCol (board[it][0], board[it][1], board[it][2]) }
     }
 
     private fun checkColumnsForWin():Boolean {
-        for (i in 0..2) {
-            if (checkRowCol (board[0][i], board[1][i], board[2][i])) {
-                return true
-            }
-        }
 
-        return false
+        return (0..2).any { checkRowCol (board[0][it], board[1][it], board[2][it]) }
     }
 
     private fun checkDiagonalsForWin():Boolean {
-        return ((checkRowCol(board[0][0], board[1][1], board[2][2]) == true) ||
-                checkRowCol(board[0][2], board[1][1], board[2][0]) == true)
+        return (checkRowCol(board[0][0], board[1][1], board[2][2]) || checkRowCol(board[0][2], board[1][1], board[2][0]))
     }
 
     fun checkForWin():Boolean{
@@ -82,10 +69,10 @@ class TicTacToe {
     }
 
     fun changePlayer() {
-        if (currentPlayerMark == 'x') {
-            currentPlayerMark = 'o'
+        currentPlayerMark = if (currentPlayerMark == 'x') {
+            'o'
         } else {
-            currentPlayerMark = 'x'
+            'x'
         }
     }
 
