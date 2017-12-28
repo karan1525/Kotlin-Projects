@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a2f326-1e96-4d4c-88c3-73709b69fc30" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Basic Data Types/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Basic Data Types/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Control Flow/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Control Flow/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../First Project/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../First Project/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Functions/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Functions/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Guess The Number/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Guess The Number/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Lambda/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lambda/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Null Safety/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Null Safety/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Object Oriented Design/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Object Oriented Design/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Tic Tac Toe/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Tic Tac Toe/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../VariationsHelloWorld/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../VariationsHelloWorld/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +22,7 @@
       <file leaf-file-name="Overload.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Overload.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="399">
               <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
@@ -62,10 +59,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="978" />
+    <option name="width" value="3360" />
+    <option name="height" value="1813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -83,6 +80,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,9 +94,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -233,14 +230,16 @@
       <updated>1502045213871</updated>
       <workItem from="1502045215183" duration="771000" />
       <workItem from="1514371300316" duration="9000" />
+      <workItem from="1514441708383" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="780000" />
+    <option name="totallyTimeSpent" value="783000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="973" extended-state="6" />
+    <frame x="0" y="22" width="3360" height="1813" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -254,7 +253,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -284,6 +283,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Overload.kt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Overload.kt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
@@ -292,7 +299,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Overload.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="399">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
