@@ -8,6 +8,12 @@ fun main(args: Array<String>) {
     println("\nMaps")
     maps()
 
+    println("\nOther methods")
+    otherMethods()
+
+    println("\nMutable List Example")
+    mutableListExample()
+
 }
 
 fun lists() {
@@ -53,4 +59,34 @@ fun maps() {
     for((key, value) in myMap) {
         println("Key = $key, value = $value")
     }
+}
+
+fun otherMethods() {
+    val list = listOf("a", "ab", "b")
+    print("Group by: ")
+    println(list.groupBy(String::first))
+}
+
+fun mutableListExample() {
+    val myList: MutableList<String> = mutableListOf()
+
+    myList.add("John")
+    myList.add("Bob")
+    myList.add("Nancy")
+    myList.add("Lucy")
+    println("My arrayList has " + myList)
+
+    myList.add(0, "Joe")
+    myList.add(1, "Tom")
+    println("My arrayList now has " + myList)
+
+    myList.remove("John")
+    myList.remove("Nancy")
+    println("My arrayList after removing elements now is " + myList)
+
+    myList.removeAt(1)
+    println("My arrayList after removing element at 1 now is " + myList)
+
+    println(myList.filter{ it.startsWith("J")})
+    println(myList.filter { it.startsWith("J")}.map{it.toUpperCase()})
 }
