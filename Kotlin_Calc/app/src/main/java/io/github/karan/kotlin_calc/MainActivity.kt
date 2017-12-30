@@ -19,4 +19,11 @@ class MainActivity : AppCompatActivity() {
         operator.setBackgroundColor(Color.BLUE)
         operator.setText("*")
     }
+
+    fun plusButtonPressed(view: View) {
+        val operator = findViewById<View>(R.id.textViewOperator) as TextView
+        operator.setTextColor(Color.WHITE)
+        operator.setBackgroundColor(Color.MAGENTA);
+        operator.setText("+")
+    }
 }
