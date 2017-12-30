@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kotlin_Android</string>
+    <string name="my_name">Hello, Karan!</string>
 </resources>
