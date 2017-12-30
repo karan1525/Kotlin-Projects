@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KotlinResources</string>
+    <string name="myButton">Jack</string>
+    <string name="myButton2">John</string>
+    <string name="name_edittext">Name</string>
+
 </resources>
