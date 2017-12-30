@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="my_string_array">
-        <item>Jason</item>
-        <item>Jason1</item>
-        <item>Jason2</item>
-        <item>Jason3</item>
-        <item>Jason4</item>
-        <item>Jason5</item>
-        <item>Jason6</item>
-        <item>Jason7</item>
-        <item>Jason8</item>
-        <item>Jason9</item>
-        <item>Jason10</item>
-        <item>Jason11</item>
-        <item>Jason12</item>
-        <item>Jason12</item>
+        <item>Karan</item>
+        <item>Karan1</item>
+        <item>Karan2</item>
+        <item>Karan3</item>
+        <item>Karan4</item>
+        <item>Karan5</item>
+        <item>Karan6</item>
+        <item>Karan7</item>
+        <item>Karan8</item>
+        <item>Karan9</item>
+        <item>Karan10</item>
+        <item>Karan11</item>
+        <item>Karan12</item>
+        <item>Karan13</item>
     </string-array>
 
 </resources>
