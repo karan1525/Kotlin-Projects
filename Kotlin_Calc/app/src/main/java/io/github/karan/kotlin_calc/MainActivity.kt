@@ -33,4 +33,11 @@ class MainActivity : AppCompatActivity() {
         operator.setBackgroundColor(Color.BLACK);
         operator.setText("-")
     }
+
+    fun divideButtonPressed(view: View) {
+        val operator = findViewById<View>(R.id.textViewOperator) as TextView
+        operator.setTextColor(Color.YELLOW);
+        operator.setBackgroundColor(Color.BLACK);
+        operator.setText("/")
+    }
 }
