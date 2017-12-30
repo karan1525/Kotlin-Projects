@@ -26,4 +26,11 @@ class MainActivity : AppCompatActivity() {
         operator.setBackgroundColor(Color.MAGENTA);
         operator.setText("+")
     }
+
+    fun minusButtonPressed(view: View) {
+        val operator = findViewById<View>(R.id.textViewOperator) as TextView
+        operator.setTextColor(Color.RED);
+        operator.setBackgroundColor(Color.BLACK);
+        operator.setText("-")
+    }
 }
