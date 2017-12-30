@@ -18,28 +18,28 @@ class MainActivity : AppCompatActivity() {
         val operator = findViewById<View>(R.id.textViewOperator) as TextView
         operator.setTextColor(Color.WHITE)
         operator.setBackgroundColor(Color.BLUE)
-        operator.setText("*")
+        operator.text = "*"
     }
 
     fun plusButtonPressed(view: View) {
         val operator = findViewById<View>(R.id.textViewOperator) as TextView
         operator.setTextColor(Color.WHITE)
-        operator.setBackgroundColor(Color.MAGENTA);
-        operator.setText("+")
+        operator.setBackgroundColor(Color.MAGENTA)
+        operator.text = "+"
     }
 
     fun minusButtonPressed(view: View) {
         val operator = findViewById<View>(R.id.textViewOperator) as TextView
-        operator.setTextColor(Color.RED);
-        operator.setBackgroundColor(Color.BLACK);
-        operator.setText("-")
+        operator.setTextColor(Color.RED)
+        operator.setBackgroundColor(Color.BLACK)
+        operator.text = "-"
     }
 
     fun divideButtonPressed(view: View) {
         val operator = findViewById<View>(R.id.textViewOperator) as TextView
-        operator.setTextColor(Color.YELLOW);
-        operator.setBackgroundColor(Color.BLACK);
-        operator.setText("/")
+        operator.setTextColor(Color.YELLOW)
+        operator.setBackgroundColor(Color.BLACK)
+        operator.text = "/"
     }
 
     fun calculateButtonPressed(view: View) {
@@ -55,13 +55,11 @@ class MainActivity : AppCompatActivity() {
         val firstOperandDouble = java.lang.Double.parseDouble(firstOperandString)
         val secondOperandDouble = java.lang.Double.parseDouble(secondOperandString)
 
-        val value = 0.0
-
         when(operatorString) {
-            "/" -> result.setText((firstOperandDouble / secondOperandDouble).toString())
-            "*" -> result.setText((firstOperandDouble * secondOperandDouble).toString())
-            "-" -> result.setText((firstOperandDouble - secondOperandDouble).toString())
-            "+" -> result.setText((firstOperandDouble + secondOperandDouble).toString())
+            "/" -> result.text = (firstOperandDouble / secondOperandDouble).toString()
+            "*" -> result.text = (firstOperandDouble * secondOperandDouble).toString()
+            "-" -> result.text = (firstOperandDouble - secondOperandDouble).toString()
+            "+" -> result.text = (firstOperandDouble + secondOperandDouble).toString()
             else -> return
         }
     }
