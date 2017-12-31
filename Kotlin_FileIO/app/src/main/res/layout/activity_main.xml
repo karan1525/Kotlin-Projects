@@ -10,7 +10,7 @@
         android:id="@+id/writeInternalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="WriteInternalOnClick"
+        android:onClick="writeInternalOnClick"
         android:text="@string/WriteInternal"
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/ReadInternalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="ReadInternalOnClick"
+        android:onClick="readInternalOnClick"
         android:text="@string/ReadInternal"
         android:textSize="8sp"
         android:layout_marginTop="8dp"
@@ -36,7 +36,7 @@
         android:id="@+id/WriteExternalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="WriteExternalOnClick"
+        android:onClick="writeExternalOnClick"
         android:text="@string/WriteExternal"
         android:textSize="8sp"
         android:layout_marginTop="8dp"
@@ -52,7 +52,7 @@
         android:id="@+id/ReadExternalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="ReadExternalOnClick"
+        android:onClick="readExternalOnClick"
         android:text="@string/ReadExternal"
         android:textSize="8sp"
         android:layout_marginTop="8dp"
@@ -68,7 +68,7 @@
         android:id="@+id/DeleteInternalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="DeleteInternalOnClick"
+        android:onClick="deleteInternalOnClick"
         android:text="@string/DeleteInternal"
         android:textSize="8sp"
         android:layout_marginTop="8dp"
@@ -83,7 +83,7 @@
         android:id="@+id/DeleteExternalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="DeleteExternalOnClick"
+        android:onClick="deleteExternalOnClick"
         android:text="@string/DeleteExternal"
         android:textSize="8sp"
         android:layout_marginTop="8dp"
@@ -111,7 +111,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="13dp"
-        android:layout_marginRight="13dp" />
+        android:layout_marginRight="13dp"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/editTextRead"
@@ -127,6 +128,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="14dp" />
+        android:layout_marginRight="14dp"
+        tools:ignore="LabelFor" />
 
 </android.support.constraint.ConstraintLayout>
