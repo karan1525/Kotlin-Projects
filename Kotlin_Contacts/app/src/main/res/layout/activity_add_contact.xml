@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.karan.kotlin_contacts.AddContactActivity" >
+
+    <EditText
+        android:id="@+id/editText_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_firstname"
+        android:layout_toEndOf="@+id/textView_firstname"
+        android:ems="10"
+        android:inputType="textCapWords"
+        tools:ignore="LabelFor">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_lastname"
+        android:layout_alignStart="@+id/editText_firstName"
+        android:ems="10"
+        android:inputType="textCapWords"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editText_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_street"
+        android:layout_alignEnd="@+id/editText_lastname"
+        android:layout_toEndOf="@+id/textView_street"
+        android:ems="10"
+        android:inputType="textCapWords"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editText_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_city"
+        android:layout_alignEnd="@+id/editText_street"
+        android:layout_toEndOf="@+id/textView_city"
+        android:ems="10"
+        android:inputType="textCapWords"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textView_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/first_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_state"
+        android:layout_alignEnd="@+id/editText_city"
+        android:layout_toEndOf="@+id/textView_state"
+        android:ems="10"
+        android:inputType="textCapWords"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editText_zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_zip"
+        android:layout_toEndOf="@+id/textView_zip"
+        android:ems="10"
+        android:inputType="textCapWords"
+        tools:ignore="LabelFor"/>
+
+    <TextView
+        android:id="@+id/textView_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_street"
+        android:layout_below="@+id/textView_firstname"
+        android:layout_marginTop="20dp"
+        android:text="@string/last_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_city"
+        android:layout_below="@+id/textView_lastname"
+        android:layout_marginTop="20dp"
+        android:text="@string/street"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_state"
+        android:layout_below="@+id/textView_street"
+        android:layout_marginTop="20dp"
+        android:text="@string/city"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_city"
+        android:layout_marginTop="20dp"
+        android:text="@string/state"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_state"
+        android:layout_below="@+id/editText_state"
+        android:layout_marginTop="20dp"
+        android:text="@string/zip_code"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_zip"
+        android:layout_marginTop="40dp"
+        android:minWidth="100dip"
+        android:onClick="okButtonClicked"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_OK"
+        android:layout_alignBottom="@+id/button_OK"
+        android:layout_alignEnd="@+id/editText_zipcode"
+        android:minWidth="100dp"
+        android:onClick="cancelButtonClicked"
+        android:text="@string/cancel" />
+
+</RelativeLayout>
