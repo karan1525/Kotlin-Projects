@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun addAppointmentBtn() {
+    fun addAppointmentBtn(view: View) {
         startActivityForResult(Intent(this, AddAppointmentActivity::class.java),
                 1)
     }

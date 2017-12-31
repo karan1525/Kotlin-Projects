@@ -21,8 +21,6 @@ class AddAppointmentActivity : AppCompatActivity() {
 
     private var txtDate = findViewById<View>(R.id.txttvDate) as TextView
     private var txtTime = findViewById<View>(R.id.txtvTime) as TextView
-//    internal var txtDate: TextView
-//    internal var txtTime: TextView
 
     private var year: Int = 0
     private var month: Int = 0
@@ -97,23 +95,23 @@ class AddAppointmentActivity : AppCompatActivity() {
     }
 
     /**When Date Text View is touched, opens a Date Picker Dialog  */
-    fun edittxtDate() {
+    fun edittxtDate(view: View) {
         showDialog(DATE_DIALOG_ID)
     }
 
     /**When Time Text View is touched, opens a Time Picker Dialog */
-    fun edittxtTime() {
+    fun edittxtTime(view: View) {
         showDialog(TIME_DIALOG_ID)
     }
 
     //Closes AddAppointmentActivity
-    fun btnCancel() {
+    fun btnCancel(view: View) {
 
         finish()
     }
 
     //Closes AddAppointmentActivity and returns the information entered in each field
-    fun btnAddAppointment() {
+    fun btnAddAppointment(view: View) {
         val editAppointmentName = findViewById<EditText>(R.id.editTaskName)
         val spinnerAppointmentType = findViewById<Spinner>(R.id.spnTaskType)
         if (!editAppointmentName.text.toString().isEmpty()) {
