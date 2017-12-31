@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> 
 
     private var adapter: SimpleCursorAdapter? = null
 
-    internal val from = arrayOf(DatabaseHelper._ID, DatabaseHelper.NAME, DatabaseHelper.ADDRESS)
+    internal val from = arrayOf(DatabaseHelper.ID, DatabaseHelper.NAME, DatabaseHelper.ADDRESS)
 
     private val to = intArrayOf(R.id.id, R.id.name, R.id.address)
 
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> 
     }
 
     override fun onCreateLoader(i: Int, bundle: Bundle): Loader<Cursor> {
-        return MyLoader(this, myHelper)
+        return MyLoader(this, myHelper!!)
     }
 
     override fun onLoadFinished(loader: Loader<Cursor>, data: Cursor) {
